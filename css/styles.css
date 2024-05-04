@@ -1,0 +1,81 @@
+/**************************
+	* STYLES
+**************************/
+/* variables */
+:root {
+	--primary: #003E52;
+	--secondary: #EE7623;
+}
+
+/* reset */
+body,p,a,ul,li {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+li {
+	list-style-type: none;
+}
+
+/* base styles */
+body {
+	overflow-x: hidden;
+	font-family: 'Rift Regular';
+	width: 100%;
+}
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.7);
+	z-index: 1000;
+}
+
+/* fonts */
+@font-face {
+	font-family: 'Rift Bold';
+	src: url('/fonts/Rift/Fort\ Foundry\ -\ Rift-Bold.otf');
+}
+@font-face {
+	font-family: 'Rift Light';
+	src: url('/fonts/Rift/Fort\ Foundry\ -\ Rift-Light.otf');
+}
+@font-face {
+	font-family: 'Rift Medium';
+	src: url('/fonts/Rift/Fort\ Foundry\ -\ Rift-Medium.otf');
+}
+@font-face {
+	font-family: 'Rift Regular';
+	src: url('/fonts/Rift/Fort\ Foundry\ -\ Rift-Regular.otf');
+}
+h1,h2,h3,h4,h5,p,a,li {
+	color: var(--primary);
+	font-weight: normal;
+}
+h4,h5 {
+	font-size: 1.2em;
+}
+/* mobile styles */
+
+
+/* small tablet styles */
+@media screen and (min-width: 600px) {
+	
+}
+
+/* large tablets and laptop styles */
+@media screen and (min-width: 960px) {
+	
+	body {
+		font-size: 18px;
+	}
+}
+
+/* desktop styles */
+@media screen and (min-width: 1200px) {
+	
+	body {
+		font-size: 20px;
+	}
+}
