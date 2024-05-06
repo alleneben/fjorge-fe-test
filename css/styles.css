@@ -5,6 +5,8 @@
 :root {
 	--primary: #003E52;
 	--secondary: #EE7623;
+	--neutral: #00000029;
+	--white: #FFFFFF;
 }
 
 /* reset */
@@ -21,15 +23,11 @@ li {
 body {
 	overflow-x: hidden;
 	font-family: 'Rift Regular';
-	width: 100%;
 }
-nav {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	background-color: rgba(255, 255, 255, 0.7);
-	z-index: 1000;
+
+button {
+	background: none;
+	border: none;
 }
 
 /* fonts */
@@ -56,8 +54,50 @@ h1,h2,h3,h4,h5,p,a,li {
 h4,h5 {
 	font-size: 1.2em;
 }
-/* mobile styles */
 
+/* ===== MOBILE STYLES ===== */
+/* navbar styles */
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.7);
+	/* z-index: 1000; */
+	background-color: var(--primary);
+	box-shadow: 0px 3px 6px #00000029;
+	height: 74px;
+}
+nav div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 14px 16px;
+}
+nav div div {
+	display: none;
+}
+nav ul li a {
+	color: var(--white);
+}
+
+/* hamburger menu styles */
+.hamburger-menu span {
+	display: block;
+	width: 25px;
+	height: 3px;
+	background-color: var(--white);
+	margin: 5px auto;
+	transition: background-color 0.3s ease;
+}
+
+/* hero section styles */
+
+
+@media screen and (min-width: 480px) {
+	
+}
 
 /* small tablet styles */
 @media screen and (min-width: 600px) {
@@ -65,7 +105,7 @@ h4,h5 {
 }
 
 /* large tablets and laptop styles */
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 801px) {
 	
 	body {
 		font-size: 18px;
@@ -73,7 +113,15 @@ h4,h5 {
 }
 
 /* desktop styles */
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1025px) {
+	
+	body {
+		font-size: 20px;
+	}
+}
+
+/* desktop styles */
+@media screen and (min-width: 1281px) {
 	
 	body {
 		font-size: 20px;
