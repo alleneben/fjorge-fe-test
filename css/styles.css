@@ -32,6 +32,7 @@ button {
 }
 
 /* fonts */
+/* Rift Bold */
 @font-face {
 	font-family: 'Rift Bold';
 	src: url('/fonts/Rift/Fort\ Foundry\ -\ Rift-Bold.otf');
@@ -48,6 +49,24 @@ button {
 	font-family: 'Rift Regular';
 	src: url('/fonts/Rift/Fort\ Foundry\ -\ Rift-Regular.otf');
 }
+
+/* Montseratt */
+@font-face {
+	font-family: 'Montseratt Bold';
+	src: url('/fonts/Montserrat/Montserrat-Bold.ttf');
+}
+@font-face {
+	font-family: 'Montseratt Light';
+	src: url('/fonts/Montserrat/Montserrat-Light.ttf');
+}
+@font-face {
+	font-family: 'Montseratt Medium';
+	src: url('/fonts/Montserrat/Montserrat-Medium.ttf');
+}
+@font-face {
+	font-family: 'Montseratt Regular';
+	src: url('/fonts/Montserrat/Montserrat-Regular.ttf');
+}
 h1,h2,h3,h4,h5,p,a,li {
 	color: var(--primary);
 	font-weight: normal;
@@ -63,7 +82,7 @@ nav, footer {
 	left: 0;
 	width: 100%;
 	background-color: rgba(255, 255, 255, 0.7);
-	/* z-index: 1000; */
+	z-index: 999;
 	background-color: var(--primary);
 	box-shadow: 0px 3px 6px #00000029;
 	height: 74px;
@@ -160,10 +179,26 @@ section div img{
 	width: 69px;
 	height: 79px;
 }
-.welcome-item h4 {
+.welcome h4 {
 	text-align: center;
 }
-
+.welcome .divider {
+	background-color: var(--secondary);
+	width: 45px;
+	height: 2px;
+	margin: 0;
+}
+.welcome .welcome-header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 2rem;
+}
+.welcome-header h4 {
+	font-family: 'Montseratt Bold';
+	margin-bottom: 0.8rem;
+}
 /* footer styles */
 footer {
     background-color: var(--primary);
