@@ -110,7 +110,6 @@ section div img{
     height: 100%;
     overflow: hidden;
 }
-
 .slide-item > img {
     position: absolute;
     top: 0;
@@ -120,7 +119,6 @@ section div img{
     object-fit: cover;
     z-index: -1;
 }
-
 .slide-item > div {
     position: relative;
     z-index: 1;
@@ -148,6 +146,22 @@ section div img{
     content: '>';
     display: inline-block;
     margin-left: 5px;
+}
+
+
+/* welcome styles */
+.welcome-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.welcome-item div {
+	width: 69px;
+	height: 79px;
+}
+.welcome-item h4 {
+	text-align: center;
 }
 
 /* footer styles */
