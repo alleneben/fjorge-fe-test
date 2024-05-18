@@ -108,11 +108,23 @@ nav ul li a {
 /* hamburger menu styles */
 .hamburger-menu span {
 	display: block;
-	width: 25px;
+	width: 30px;
 	height: 3px;
 	background-color: var(--white);
 	margin: 5px auto;
-	transition: background-color 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.close span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.close span:nth-child(2) {
+    opacity: 0;
+}
+
+.close span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
 }
 
 /* hero slide section styles */
