@@ -98,8 +98,20 @@ nav div {
 
 	padding: 14px 16px;
 }
-nav div div {
+.menu-items {
+	height: 70%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.menu-items ul {
 	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	gap: 2rem;
+	font-size: 24px;
 }
 nav ul li a {
 	color: var(--white);
