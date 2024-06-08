@@ -4,7 +4,10 @@
 console.log('script file is connected');
 
 // Slick slider
-$('.hero').slick();
+$('.hero').slick({
+  prevArrow: $('.prev'),
+  nextArrow: $('.next'),
+});
 
 // Mobile menu
 document.addEventListener("DOMContentLoaded", function() {
