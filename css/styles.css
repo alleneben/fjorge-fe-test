@@ -143,6 +143,9 @@ nav ul li a {
 .hero {
 	margin-top: 74px;
 }
+.hero-wrapper {
+	position: relative;
+}
 section div img{
 	width: 100%;
 	height: 100%;
@@ -150,7 +153,7 @@ section div img{
 .slide-item {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 504px;
     overflow: hidden;
 }
 .slide-item > img {
@@ -189,6 +192,11 @@ section div img{
     content: '>';
     display: inline-block;
     margin-left: 5px;
+}
+.slide-buttons {
+	position: absolute;
+	bottom: 10px;
+	right: 0;
 }
 
 
@@ -265,5 +273,17 @@ footer {
 	
 	body {
 		font-size: 20px;
+	}
+	.welcome-items {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.welcome-item {
+		flex: 20%;
+  		padding: 20px;
+	}
+	nav {
+		
 	}
 }
