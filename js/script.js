@@ -38,4 +38,13 @@ document.addEventListener("DOMContentLoaded", function() {
       footer.style.display = "none";
     }
   });
+
+  // Listen for window resize events
+  window.addEventListener('resize', function() {
+    if (window.innerWidth >= 1024) {
+      menu_items.style.display = "flex";
+    }
+  });
+  
+
 });
