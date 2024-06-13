@@ -177,10 +177,19 @@ section div img{
 }
 .slide-item > div {
     position: relative;
-    z-index: 1;
-    color: white;
-    /* text-align: center; */
-    padding: 20px;
+	width: 510px;
+	text-align: center;
+	top: 50%;
+	left: 60%;
+	transform: translate(-50%, -50%);
+	color: var(--primary);
+	font-size: var(--font-size-xlarge);
+	font-family: 'Montseratt Bold';
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 .slick-prev, .slick-next {
     position: absolute;
@@ -344,9 +353,7 @@ footer {
 		width: 610px;
 		top: 50%;
 		left: 70%;
-		transform: translate(-50%, -50%);
-		color: var(--primary);
-		font-size: var(--font-size-xlarge);
-		font-family: 'Montseratt Bold';
+		text-align: left;
+		align-items: flex-start;
 	}
 }
