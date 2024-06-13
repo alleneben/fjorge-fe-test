@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const hamburger_menu = document.getElementById('hamburger-menu');
 
   //get nav from the DOM
-  const nav = document.getElementById('nav');
+  const nav = document.getElementById('nav-mobile');
 
   //get nav from the DOM
   const footer = document.getElementById('footer');
