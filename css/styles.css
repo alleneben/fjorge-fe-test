@@ -79,7 +79,7 @@ h1,h2,h3,h4,h5,p,a,li {
 	font-weight: normal;
 }
 h4,h5 {
-	font-size: 1.2em;
+	font-size: 24px;
 }
 
 /* ===== MOBILE STYLES ===== */
@@ -103,7 +103,7 @@ nav div {
 	justify-content: space-between;
 	align-items: center;
 
-	padding: 14px 138px;
+	padding: 14px 16px;
 }
 .menu-items {
 	height: 70%;
@@ -149,6 +149,7 @@ nav div {
 /* hero slide section styles */
 .hero {
 	margin-top: 74px;
+	/* height: 330px; */
 }
 .hero-wrapper {
 	position: relative;
@@ -175,11 +176,11 @@ section div img{
 }
 .slide-item > div {
     position: relative;
-	width: 510px;
+	width: 272px;
 	text-align: center;
 	top: 50%;
 	left: 60%;
-	transform: translate(-50%, -50%);
+	transform: translate(-70%, -50%);
 	color: var(--primary);
 	font-size: var(--font-size-xlarge);
 	font-family: 'Montseratt Bold';
@@ -188,6 +189,9 @@ section div img{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+.slide-item div h4 {
+	margin-bottom: 1rem;
 }
 .slick-prev, .slick-next {
     position: absolute;
@@ -212,7 +216,7 @@ section div img{
 .slide-buttons {
 	position: absolute;
 	bottom: 2rem;
-	right: 138px;
+	right: 2rem;
 	gap: 1rem;
 	display: flex;
 	align-items: center;
@@ -353,6 +357,9 @@ footer {
 		display: flex;
 		justify-content: space-between;
 	}
+	.nav div {
+		padding: 14px 138px;
+	}
 	.nav div a {
 		margin-top: 23px;
 	}
@@ -369,13 +376,17 @@ footer {
 		align-items: center;
 	}
 	.slide-item > div {
-		width: 610px;
+		width: 510px;
 		height: 110px;
-		transform: translate(-20%, -50%);
+		transform: translate(-2%, -50%);
 		text-align: left;
 		align-items: flex-start;
 	}
-	.slide-item div h4 {
-		margin-bottom: 1rem;
+	.slide-item > div h4 {
+		font-size: 42px;
 	}
+	.slide-buttons {
+		right: 138px;
+	}
+	
 }
