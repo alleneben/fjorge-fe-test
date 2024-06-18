@@ -17,7 +17,7 @@
 }
 
 /* reset */
-body,p,a,ul,li {
+* {
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
@@ -103,7 +103,7 @@ nav div {
 	justify-content: space-between;
 	align-items: center;
 
-	padding: 14px 16px;
+	padding: 14px 138px;
 }
 .menu-items {
 	height: 70%;
@@ -152,6 +152,7 @@ nav div {
 }
 .hero-wrapper {
 	position: relative;
+	margin-bottom: 47px;
 }
 section div img{
 	width: 100%;
@@ -211,7 +212,7 @@ section div img{
 .slide-buttons {
 	position: absolute;
 	bottom: 2rem;
-	right: 2rem;
+	right: 138px;
 	gap: 1rem;
 	display: flex;
 	align-items: center;
@@ -232,11 +233,13 @@ section div img{
 	cursor: pointer;
 	background-color: #FFFFFF;
 	box-shadow: var(--box-shadow);
-	padding: 10px 30px;
+	padding: 7px 12px;
 	font-family: 'Rift Medium';
 	color: var(--primary);
-	font-size: 18px;
+	font-size: 14px;
 	font-weight: bolder;
+	width: 115px;
+	height: 32px;
 
 	display: flex;
 	justify-content: space-between;
@@ -320,10 +323,14 @@ footer {
 	body {
 		font-size: 20px;
 	}
+	.welcome {
+		margin-bottom: 90px;
+	}
 	.welcome-items {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-around;
+		padding: 0 139px;
 	}
 	.welcome-item {
 		flex: 20%;
@@ -335,6 +342,7 @@ footer {
 		font-family: 'Montseratt Medium';
 		font-size: 18px;
 		font-weight: bolder;
+		margin-top: 33px;
 	}
 	ul li a {
 		text-transform: capitalize !important;
@@ -344,6 +352,9 @@ footer {
 		box-shadow: none;
 		display: flex;
 		justify-content: space-between;
+	}
+	.nav div a {
+		margin-top: 23px;
 	}
 	#hamburger-menu {
 		display: none;
@@ -359,9 +370,12 @@ footer {
 	}
 	.slide-item > div {
 		width: 610px;
-		top: 50%;
-		left: 70%;
+		height: 110px;
+		transform: translate(-20%, -50%);
 		text-align: left;
 		align-items: flex-start;
+	}
+	.slide-item div h4 {
+		margin-bottom: 1rem;
 	}
 }
