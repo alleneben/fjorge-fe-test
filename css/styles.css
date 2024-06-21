@@ -79,7 +79,7 @@ h1,h2,h3,h4,h5,p,a,li {
 	color: var(--primary);
 	font-weight: normal;
 }
-h4,h5 {
+h1,h2,h3,h4,h5 {
 	font-size: 24px;
 }
 
@@ -192,7 +192,7 @@ section div img{
 .slide-item {
     position: relative;
     width: 100%;
-    height: 604px;
+    height: 350px;
     overflow: hidden;
 }
 .slide-item > img {
@@ -209,7 +209,7 @@ section div img{
 	width: 272px;
 	text-align: center;
 	top: 50%;
-	left: 60%;
+	left: 70%;
 	transform: translate(-70%, -50%);
 	color: var(--primary);
 	font-size: var(--font-size-xlarge);
@@ -220,7 +220,7 @@ section div img{
 	justify-content: center;
 	align-items: center;
 }
-.slide-item div h4 {
+.slide-item div h1 {
 	margin-bottom: 1rem;
 }
 .slick-prev, .slick-next {
@@ -306,7 +306,7 @@ section div img{
 	margin-bottom: 25px;
 
 }
-.welcome-item h4 {
+.welcome-item h3 {
 	width: 230px;
 	height: 61px;
 	color: var(--primary);
@@ -314,7 +314,7 @@ section div img{
 	letter-spacing: 1.92px;
 	font-family: 'Rift Medium';
 }
-.welcome h4 {
+.welcome h3 {
 	text-align: center;
 }
 .welcome .divider {
@@ -330,7 +330,7 @@ section div img{
 	align-items: center;
 	margin-bottom: 2rem;
 }
-.welcome-header h4 {
+.welcome-header h2 {
 	font-family: 'Montseratt Bold';
 	margin-bottom: 0.8rem;
 	font-size: 20px;
@@ -383,10 +383,10 @@ footer {
 	.welcome .divider {
 		background-color: var(--gray);
 	}
-	.welcome h4 {
+	.welcome h3 {
 		text-align: left;
 	}
-	.welcome-header h4 {
+	.welcome-header h2 {
 		font-size: 28px;
 	}
 	.welcome-items {
@@ -445,7 +445,7 @@ footer {
 		text-align: left;
 		align-items: flex-start;
 	}
-	.slide-item > div h4 {
+	.slide-item > div h1 {
 		font-size: 42px;
 	}
 	.slide-buttons {
