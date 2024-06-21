@@ -1,6 +1,7 @@
 /**************************
 	* STYLES
 **************************/
+
 /* variables */
 :root {
 	--primary: #003E52;
@@ -134,7 +135,7 @@ nav div {
 	transition: all 0.3s ease;
 }
 
-.close span:nth-child(1) {
+/* .close span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
 }
 
@@ -144,7 +145,36 @@ nav div {
 
 .close span:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
-}
+} */
+.close {
+	position: relative; 
+	width: 60px;
+	height: 60px;
+	background-color: transparent; /* Optional: Set background color */
+	cursor: pointer; /* Indicate clickable element */
+	transition: all 0.3s ease;
+  }
+  
+  .close:before,
+  .close:after {
+	content: ""; /* Empty content for pseudo-elements */
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	width: 2px;
+	height: 50%;
+	background-color: white; /* Color of the X */
+	transform-origin: center; /* Rotation point */
+  }
+  
+  .close:before {
+	transform: rotate(45deg); /* Rotate first line */
+  }
+  
+  .close:after {
+	transform: rotate(-45deg); /* Rotate second line */
+  }
+
 
 /* hero slide section styles */
 .hero {
@@ -254,15 +284,35 @@ section div img{
 	font-size: var(--font-size-large);
 }
 /* welcome styles */
+.welcome {
+	margin-bottom: 90px;
+}
+.welcome-items {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	
+}
 .welcome-item {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin-bottom: 1rem;
 }
 .welcome-item div {
 	width: 69px;
-	height: 79px;
+	height: 72px;
+	margin-bottom: 25px;
+
+}
+.welcome-item h4 {
+	width: 186px;
+	height: 61px;
+	color: var(--primary);
+	font-weight: bolder;
+	letter-spacing: 1.92px;
+	font-family: 'Rift Medium';
 }
 .welcome h4 {
 	text-align: center;
@@ -283,6 +333,7 @@ section div img{
 .welcome-header h4 {
 	font-family: 'Montseratt Bold';
 	margin-bottom: 0.8rem;
+	font-size: 20px;
 }
 /* footer styles */
 footer {
@@ -307,7 +358,6 @@ footer {
 
 /* large tablets and laptop styles */
 @media screen and (min-width: 801px) {
-	
 	body {
 		font-size: 18px;
 	}
@@ -330,15 +380,29 @@ footer {
 	.welcome {
 		margin-bottom: 90px;
 	}
+	.welcome .divider {
+		background-color: var(--gray);
+	}
+	.welcome h4 {
+		text-align: left;
+		/* width: 293px; */
+		/* height: 119px; */
+	}
 	.welcome-items {
 		display: flex;
+		flex-direction: row;
 		flex-wrap: wrap;
+		gap: 1rem;
 		justify-content: space-around;
 		padding: 0 139px;
+		/* width: 1006px;
+		height: 475px; */
 	}
 	.welcome-item {
 		flex: 20%;
   		padding: 20px;
+		display: flex;
+		align-items: flex-start;
 	}
 	.menu-items ul {
 		display: flex;
@@ -378,7 +442,7 @@ footer {
 	.slide-item > div {
 		width: 510px;
 		height: 110px;
-		transform: translate(-2%, -50%);
+		transform: translate(-10%, -60%);
 		text-align: left;
 		align-items: flex-start;
 	}
@@ -388,5 +452,6 @@ footer {
 	.slide-buttons {
 		right: 138px;
 	}
+	
 	
 }
