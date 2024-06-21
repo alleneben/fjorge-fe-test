@@ -254,15 +254,35 @@ section div img{
 	font-size: var(--font-size-large);
 }
 /* welcome styles */
+.welcome {
+	margin-bottom: 90px;
+}
+.welcome-items {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	
+}
 .welcome-item {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin-bottom: 1rem;
 }
 .welcome-item div {
 	width: 69px;
-	height: 79px;
+	height: 72px;
+	margin-bottom: 25px;
+
+}
+.welcome-item h4 {
+	width: 186px;
+	height: 61px;
+	color: var(--primary);
+	font-weight: bolder;
+	letter-spacing: 1.92px;
+	font-family: 'Rift Medium';
 }
 .welcome h4 {
 	text-align: center;
@@ -283,6 +303,7 @@ section div img{
 .welcome-header h4 {
 	font-family: 'Montseratt Bold';
 	margin-bottom: 0.8rem;
+	font-size: 20px;
 }
 /* footer styles */
 footer {
@@ -307,7 +328,6 @@ footer {
 
 /* large tablets and laptop styles */
 @media screen and (min-width: 801px) {
-	
 	body {
 		font-size: 18px;
 	}
@@ -330,15 +350,29 @@ footer {
 	.welcome {
 		margin-bottom: 90px;
 	}
+	.welcome .divider {
+		background-color: var(--gray);
+	}
+	.welcome h4 {
+		text-align: left;
+		/* width: 293px; */
+		/* height: 119px; */
+	}
 	.welcome-items {
 		display: flex;
+		flex-direction: row;
 		flex-wrap: wrap;
+		gap: 1rem;
 		justify-content: space-around;
 		padding: 0 139px;
+		/* width: 1006px;
+		height: 475px; */
 	}
 	.welcome-item {
 		flex: 20%;
   		padding: 20px;
+		display: flex;
+		align-items: flex-start;
 	}
 	.menu-items ul {
 		display: flex;
@@ -378,7 +412,7 @@ footer {
 	.slide-item > div {
 		width: 510px;
 		height: 110px;
-		transform: translate(-2%, -50%);
+		transform: translate(-10%, -60%);
 		text-align: left;
 		align-items: flex-start;
 	}
