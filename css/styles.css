@@ -385,8 +385,9 @@ footer {
 	}
 	.welcome h4 {
 		text-align: left;
-		/* width: 293px; */
-		/* height: 119px; */
+	}
+	.welcome-header h4 {
+		font-size: 28px;
 	}
 	.welcome-items {
 		display: flex;
@@ -395,8 +396,6 @@ footer {
 		gap: 1rem;
 		justify-content: space-around;
 		padding: 0 139px;
-		/* width: 1006px;
-		height: 475px; */
 	}
 	.welcome-item {
 		flex: 20%;
