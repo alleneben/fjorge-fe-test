@@ -25,7 +25,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
   hamburger_menu.addEventListener('click', function() {
     //add close class
-    hamburger_menu.classList.toggle('close');
+    if(hamburger_menu.classList.value === 'hamburger-menu') {
+      hamburger_menu.classList.toggle('close');
+      hamburger_menu.classList.remove('hamburger-menu')
+    } else {
+      hamburger_menu.classList.add('hamburger-menu')
+      hamburger_menu.classList.remove('close');
+    }
       
     //if height of nav is 100vh then reset it to original height, 74px
     if(nav.style.height === "100vh") {

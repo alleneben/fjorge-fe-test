@@ -1,6 +1,7 @@
 /**************************
 	* STYLES
 **************************/
+
 /* variables */
 :root {
 	--primary: #003E52;
@@ -134,7 +135,7 @@ nav div {
 	transition: all 0.3s ease;
 }
 
-.close span:nth-child(1) {
+/* .close span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
 }
 
@@ -144,7 +145,36 @@ nav div {
 
 .close span:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
-}
+} */
+.close {
+	position: relative; 
+	width: 60px;
+	height: 60px;
+	background-color: transparent; /* Optional: Set background color */
+	cursor: pointer; /* Indicate clickable element */
+	transition: all 0.3s ease;
+  }
+  
+  .close:before,
+  .close:after {
+	content: ""; /* Empty content for pseudo-elements */
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	width: 2px;
+	height: 50%;
+	background-color: white; /* Color of the X */
+	transform-origin: center; /* Rotation point */
+  }
+  
+  .close:before {
+	transform: rotate(45deg); /* Rotate first line */
+  }
+  
+  .close:after {
+	transform: rotate(-45deg); /* Rotate second line */
+  }
+
 
 /* hero slide section styles */
 .hero {
@@ -422,5 +452,6 @@ footer {
 	.slide-buttons {
 		right: 138px;
 	}
+	
 	
 }
