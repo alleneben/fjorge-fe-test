@@ -441,7 +441,7 @@ footer {
 	.slide-item > div {
 		width: 510px;
 		height: 110px;
-		transform: translate(-10%, -60%);
+		transform: translate(-18%, -60%);
 		text-align: left;
 		align-items: flex-start;
 	}
