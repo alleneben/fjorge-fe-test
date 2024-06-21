@@ -253,15 +253,16 @@ section div img{
 	justify-content: center;
 }
 .prev, .next {
-	background-color: #FFFFFF;
+	/* background-color: #FFFFFF; */
 	border-radius: 100%;
 	height: 20px;
 	width: 20px;
 	cursor: pointer;
 }
 .prev span, .next span {
-	font-size: 1rem;
-	color: var(--gray);
+	font-size: 1.5rem;
+	color: var(--white);
+	font-weight: bolder;
 }
 .cta {
 	cursor: pointer;
