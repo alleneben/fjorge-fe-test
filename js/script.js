@@ -7,7 +7,12 @@ console.log('script file is connected');
 $('.hero').slick({
   prevArrow: $('.prev'),
   nextArrow: $('.next'),
+  infinite: true,
+  slidesToShow: 1,
+  speed: 2000,
+  autoplay: true
 });
+
 
 // Mobile menu
 document.addEventListener("DOMContentLoaded", function() {
