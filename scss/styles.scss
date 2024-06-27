@@ -14,8 +14,11 @@
     --font-size-large: 24px;
     --font-size-xlarge: 42px;
     --spacing: 20px;
-    --box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
+	--box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
 }
+
+// SASS declarations
+$box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
 
 /* reset */
 * {
@@ -305,7 +308,6 @@ section div img{
 	width: 69px;
 	height: 72px;
 	margin-bottom: 25px;
-
 }
 .welcome-item h3 {
 	width: 230px;
@@ -336,6 +338,7 @@ section div img{
 	margin-bottom: 0.8rem;
 	font-size: 20px;
 }
+
 /* footer styles */
 footer {
     background-color: var(--primary);
@@ -403,6 +406,18 @@ footer {
   		padding: 20px;
 		display: flex;
 		align-items: flex-start;
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+		&:hover {
+			cursor: pointer;
+			box-shadow: $box-shadow;
+			border-radius: 5px;
+			
+			h3 {
+				color: blue;
+				text-decoration: underline;
+			}
+		}
 	}
 	.menu-items ul {
 		display: flex;
